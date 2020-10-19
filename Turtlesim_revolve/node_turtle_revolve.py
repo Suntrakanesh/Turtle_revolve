@@ -2,11 +2,14 @@
 
 import rospy
 from geometry_msgs.msg import Twist
+from turtlesim.msg import Pose
 
 def turtle_move_circle():
 	pub = rospy.Publisher('/turtle1/cmd_vel',Twist, queue_size = 10)
-          rospy.init_node('node_turtle_revolve')
+	sub = rospy.Subscriber('/turtle1/pose', Pose, callback)
+        rospy.init_node('node_turtle_revolve')
 	vel_msg = Twist()
+	posi = Pose()
 
 	print "Your wish is my command"
 	print "If you want to quit and watch me draw squares, Ctl-c me"
@@ -21,6 +24,7 @@ def turtle_move_circle():
 	
 	#Move Robot in circle
 	while not rospy.is_shutdown():
+		if 
 		pub.publish(vel_msg)
 	
 	pub.publish(vel_msg)	
