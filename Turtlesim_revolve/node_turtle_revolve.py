@@ -4,6 +4,11 @@ import rospy
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 
+def callback()
+       global x_pose, y_pose
+	x_pose=posi.x
+	y_pose=posi.y
+
 def turtle_move_circle():
 	pub = rospy.Publisher('/turtle1/cmd_vel',Twist, queue_size = 10)
 	sub = rospy.Subscriber('/turtle1/pose', Pose, callback)
@@ -24,10 +29,10 @@ def turtle_move_circle():
 	
 	#Move Robot in circle
 	while not rospy.is_shutdown():
-		if 
-		pub.publish(vel_msg)
-	
-	pub.publish(vel_msg)	
+		if x_pose!= 5.544445 && y_pose!=5.544445:
+		   pub.publish(vel_msg)
+		else :
+	            break
 
 
 if __name__ == "__main__":
