@@ -14,7 +14,7 @@ source devel/setup.bash
 - Run this command to make as executable file<br/>
 ```chmod +x ~/catkin_ws/src/pkg_task0/scripts/node_turtle_revolve.py```
 
-- Before executing make sure that `roscore` is running along with `turtlesim_node`. You can either run them in separate terminals or simply create a `task0.launch` file inside the `~/catkin_ws/src/pkg_task0/launch/ folder`. Launch file can run multiple nodes unlike a python/cpp script. Run the launch file, enter,
+- Before executing make sure that `roscore` is running along with `turtlesim_node`. You can either run them in separate terminals or simply create a `task0.launch` file inside the `~/catkin_ws/src/pkg_task0/launch/ folder`. Launch file can run multiple nodes unlike a python/cpp script. Run the launch file, enter,<br/>
 `roslaunch pkg_task0 task0.launch`
 
 ## Recording Logs
@@ -25,7 +25,7 @@ source devel/setup.bash
 
 - You can run the `rosbag record` command separately on the command line. But to not loose any data you will have to start recording precisely at the same moment your turtle starts moving. Hence it is a much more preferable option to include the rosbag recording in your launch file itself. We have included rosbag recording in the launch file. You can find it in the name of `task0.launch`.
 
-- Use this command to launch the entire package
+- Use this command to launch the entire package<br/>
 `roslaunch pkg_task0 task0.launch record:=true rec_name:=my_turtle.bag`
 
 - Thus using these parameters along with your launch file will record a bag file of appropriate duration.
