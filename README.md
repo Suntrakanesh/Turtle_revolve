@@ -16,4 +16,6 @@ source devel/setup.bash
 
 4. Before executing make sure that `roscore` is running along with `turtlesim_node`. You can either run them in separate terminals or simply create a `task0.launch` file inside the `~/catkin_ws/src/pkg_task0/launch/ folder`. Launch file can run multiple nodes unlike a python/cpp script. Run the launch file, enter,
 `roslaunch pkg_task0 task0.launch`
+## Output 
 
+![Output](https://user-images.githubusercontent.com/64604283/96679826-0847ac80-1392-11eb-97b2-2b48a92711cb.jpeg)
