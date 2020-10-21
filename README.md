@@ -32,7 +32,7 @@ source devel/setup.bash
 
 - After the recording duration, the message: `[rosbag_record_turtle-4] process has finished cleanly`
 
-- Verify that your bag file is properly recorded by using the rosbag info command followed by the absolute or relative path of the file. To do so, enter the following command
+- Verify that your bag file is properly recorded by using the rosbag info command followed by the absolute or relative path of the file. To do so, enter the following command<br/>
 `roscd pkg_task0/bag_files`<br/>
 `rosbag info my_turtle.bag`
 
