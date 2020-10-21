@@ -35,6 +35,7 @@ source devel/setup.bash
 - Verify that your bag file is properly recorded by using the rosbag info command followed by the absolute or relative path of the file. To do so, enter the following command<br/>
 `roscd pkg_task0/bag_files`<br/>
 `rosbag info my_turtle.bag`
+
 - You can use the `rosbag play` command to see the messages you've recorded in the same order and rate. You can verify this by running the `turtlesim_node` and playing your bag file.
 
 ## Output 
