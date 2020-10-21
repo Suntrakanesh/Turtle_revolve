@@ -5,10 +5,10 @@ Turtle sim revolve is the basic exercise in **ROS**. Every beginners should prac
 ## The complete instruction of pre-requirements as follows :
 
 1. First, create a package named `pkg_task0` , within your catkin workspace. Once done, compile and source the packages.
-``` cd ~/catkin_ws
+ ``` cd ~/catkin_ws
 catkin build
 source devel/setup.bash
-```
+ ```
 2. Within this package, you should have a `scripts` folder inside which you'll create a python script, named `node_turtle_revolve.py`. It is available in this repository you can download on your system.
 
 3. Run this command to make as executable file 
